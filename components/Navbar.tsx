@@ -12,7 +12,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="hidden sm:flex bg-zinc-800 text-white h-16 sticky top-0  items-center  flex-row flex-wrap justify-around gap-x-2 ">
-        <div className="name text-3xl">Aniket Sharma</div>  
+        <div className="name text-3xl hover:scale-105 hover:underline
+        hover:underline-offset-4
+        hover:decoration-wavy hover:decoration-yellow-600">
+          <Link href={'/'}>Aniket Sharma</Link>
+          </div>
 
 
         <div className="icons flex justify-center items-center gap-x-3 ">
@@ -49,7 +53,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className="sm:hidden bg-zinc-900 backdrop-blur-sm flex justify-around items-center p-2 rounded-full fixed z-10 text-white  w-80 ml-7   ">
+      <nav className="sm:hidden bg-zinc-900 backdrop-blur-sm flex justify-around items-center p-2 rounded-full fixed z-10 text-white  w-80 ml-7 mt-2  ">
         <div className="name text-2xl">Aniket Sharma</div>
         <button className="mode " onClick={() => setMode((prev) => !prev)}>
           {mode ? (
