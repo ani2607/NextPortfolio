@@ -11,11 +11,11 @@ const Navbar = () => {
   const [mode, setMode] = useState(false);
   return (
     <>
-      <nav className="hidden sm:flex bg-zinc-800 text-white h-16 sticky top-0  items-center  flex-row flex-wrap justify-around gap-x-2 ">
+      <nav className="hidden sm:flex bg-zinc-800 text-white h-16  items-center  flex-row flex-wrap justify-around gap-x-2 ">
         <div className="name text-3xl hover:scale-105 hover:underline
         hover:underline-offset-4
         hover:decoration-wavy hover:decoration-yellow-600">
-          <Link href={'/'}>Aniket Sharma</Link>
+          <Link href={'/'}>A.S</Link>
           </div>
 
 
@@ -53,8 +53,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className="sm:hidden bg-zinc-900 backdrop-blur-sm flex justify-around items-center p-2 rounded-full fixed z-10 text-white  w-80 ml-7 mt-2  ">
-        <div className="name text-2xl">Aniket Sharma</div>
+      <nav className="sm:hidden bg-zinc-900 backdrop-blur-sm flex justify-around items-center p-2 gap-2 rounded-full fixed z-10 text-white  w-80 ml-7 mt-2  ">
+        <div className="name text-2xl">A.S</div>
         <button className="mode " onClick={() => setMode((prev) => !prev)}>
           {mode ? (
             <MdOutlineDarkMode size={27} />
