@@ -11,7 +11,8 @@ const Navbar = () => {
   const [mode, setMode] = useState(false);
   return (
     <>
-      <nav className="hidden sm:flex bg-zinc-800 text-white h-16  items-center  flex-row flex-wrap justify-around gap-x-2 ">
+      <nav className="hidden sm:flex bg-zinc-800 text-white h-[70px]  items-center  flex-row flex-wrap justify-around   w-[80vw] rounded-2xl m-auto mt-3
+      sticky top-1 ">
         <div className="name text-3xl hover:scale-105 hover:underline
         hover:underline-offset-4
         hover:decoration-wavy hover:decoration-yellow-600">
@@ -19,7 +20,7 @@ const Navbar = () => {
           </div>
 
 
-        <div className="icons flex justify-center items-center gap-x-3 ">
+        <div className="icons flex justify-evenly items-center gap-x-3 ">
           <div className="home   ">
             <Link className="flex items-center gap-1  hover:border-b-yellow-600
             hover:border-b-[3px]   hover:transition-all hover:duration-75 hover:delay-200   " href={"/"}>
@@ -53,7 +54,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className="sm:hidden bg-zinc-900 backdrop-blur-sm flex justify-around items-center p-2 gap-2 rounded-full fixed z-10 text-white  w-80 ml-7 mt-2  ">
+    {/* mobile view of top navbar */}
+      <nav className="sm:hidden bg-zinc-900 backdrop-blur-sm flex justify-around items-center p-2 gap-2 rounded-full sticky top-2 mb-2 z-10  text-white  w-80 ml-7 mt-2 backdrop-brightness-150  ">
         <div className="name text-2xl">A.S</div>
         <button className="mode " onClick={() => setMode((prev) => !prev)}>
           {mode ? (
