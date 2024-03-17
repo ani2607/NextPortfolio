@@ -55,7 +55,7 @@ const Navbar = () => {
       </nav>
 
     {/* mobile view of top navbar */}
-      <nav className="sm:hidden bg-zinc-900 backdrop-blur-sm flex justify-around items-center p-2 gap-2 rounded-full sticky top-2 mb-2 z-10 ml-1  text-white  w-[96vw]  mt-2 backdrop-brightness-150  ">
+      <nav className="sm:hidden bg-zinc-900 backdrop-blur-sm flex justify-around items-center p-2 gap-2 rounded-full sticky top-2 mb-2 z-10 ml-1  text-white  w-[97vw]  mt-2 backdrop-brightness-150  ">
         <div className="name text-2xl"><Link href={'/'} >A.S</Link></div>
         <button className="mode " onClick={() => setMode((prev) => !prev)}>
           {mode ? (

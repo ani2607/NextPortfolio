@@ -29,7 +29,7 @@ const ContactPage = () => {
               rows={10}
             >
               Message
-              
+
             </textarea>
           </div>
           <div className="btn mt-5 flex justify-center flex-wrap ">
@@ -38,6 +38,9 @@ const ContactPage = () => {
             </button>
           </div>
         </form>
+        <div className="bottom">
+          
+        </div>
       </div>
 
       {/* desktop view */}
