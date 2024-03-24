@@ -1,13 +1,16 @@
 "use client";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
-import { Link } from "react-router-dom";
 
-const url: string = "/boy.jpg";
+
+const url: string = "https://res.cloudinary.com/dfabrufbd/image/upload/v1710947913/resumeImages/boyImage.jpg";
 const pdfUrl: string =
   "https://drive.google.com/file/d/1hojR94It0g15gLdgcLMKLoFbQ9LFQM2d/view?usp=sharing";
+  const pdfUrl2 : string = "";
 
 export default function Home() {
+
+  
   // logic for downloading a file when a user clicks on the button
   const downloadFile = () => {
     const aTag = document.createElement("a");
